@@ -1,0 +1,121 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  color: white;
+}
+.nav-link,
+.navbar-brand,
+.navbar-toggler {
+  color: white;
+}
+
+#carouselExampleIndicators {
+  top: 0;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-caption {
+  text-align: left;
+  bottom: 30%;
+}
+
+.carousel-caption p {
+  font-family: "Merriweather";
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.parallax {
+  margin-top: 0;
+  text-align: center;
+  /* The image used */
+  background-image: url("../img/Magenta1.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1 img {
+  width: 100%;
+  height: 382px;
+}
+.separator1 {
+  border: 1px solid #031f85;
+  width: 40px;
+}
+
+/*  Flip Cards  */
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 260px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border: 0.5px solid #2b0b28;
+  border-radius: 10%;
+}
+
+.flip-card-front h4,
+.flip-card-back h4 {
+  font-family: "Carter One";
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #700837;
+  color: white;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #2b0b28;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}

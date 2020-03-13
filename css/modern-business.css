@@ -10,15 +10,26 @@ body {
 .navbar-brand,
 .navbar-toggler {
   color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.nav-link:hover {
+  background-color: #210538;
+  border-radius: 0.5em;
 }
 
 #carouselExampleIndicators {
   top: 0;
+  height: 600px;
 }
 .carousel-item {
   height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
+  min-height: 600px;
+  background: linear-gradient(
+    to right,
+    rgba(23, 2, 39, 1),
+    rgba(78, 32, 87, 0.7)
+  );
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,25 +41,55 @@ body {
 }
 .carousel-caption {
   text-align: left;
-  bottom: 30%;
+  bottom: 40%;
 }
 
 .carousel-caption p {
   font-family: "Merriweather";
 }
 
+.btn-get-started {
+  border: 2px solid #007bff;
+  text-shadow: 2px 2px 4px #000000;
+  color: #fff;
+  border-radius: 1em;
+  padding: 4px;
+}
+
+.btn-get-started:hover {
+  background: #190427;
+  border-color: #007bff;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: none;
+  color: #fff;
+}
+
 .portfolio-item {
   margin-bottom: 30px;
 }
 
-.parallax {
+.about-snip {
   margin-top: 0;
   text-align: center;
   /* The image used */
-  background-image: url("../img/Magenta1.jpg");
+  background: linear-gradient(
+    to right,
+    rgba(23, 2, 39, 1),
+    rgba(78, 32, 87, 0.7)
+  );
+  height: 385px;
+}
 
+.image1 img {
+  width: 100%;
+  height: 382px;
+  margin-top: 2px;
+}
+
+.service-snip {
+  background-image: url(../img/Magenta-wall.jpg);
   /* Set a specific height */
-  height: 800px;
+  height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -56,20 +97,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.image1 img {
-  width: 100%;
-  height: 382px;
+.service-snip-head {
+  font-family: "Carter One";
+  color: #fff;
+  text-align: center;
 }
+
 .separator1 {
-  border: 1px solid #031f85;
+  border: 1px solid #fff;
   width: 40px;
 }
 
 /*  Flip Cards  */
 .flip-card {
   background-color: transparent;
-  width: 250px;
+  width: 350px;
   height: 260px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -108,7 +150,11 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #700837;
+  background: linear-gradient(
+    to right,
+    rgba(23, 2, 39, 1),
+    rgba(78, 32, 87, 1)
+  );
   color: white;
 }
 

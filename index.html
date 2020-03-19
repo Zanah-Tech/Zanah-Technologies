@@ -19,6 +19,16 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet" />
+    <style>
+      #mosaic {
+        margin-top: 2px;
+        background-image: url("Laptop2.jpg"), url("Laptop.jpg");
+      }
+
+      #mosaic span.hover {
+        float: left;
+      }
+    </style>
   </head>
 
   <body>
@@ -85,34 +95,38 @@
               <h2>
                 ZANAH TECHNOLOGIES
               </h2>
-              <h3>CUTTING EDGE TECHNOLOGY SOLUTIONS</h3>
+              <h3>CUTTING EDGE IT SOLUTIONS</h3>
               <p>
                 Get ICT insights and solutions to help drive your business
                 forward faster...
               </p>
+              <br />
               <a href="#about" class="btn-get-started">Get Started With Us..</a>
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item">
             <div class="carousel-caption d-none d-md-block">
+              <h2>
+                We offer a wide range of services
+              </h2>
               <h3>
                 Whatever your business goals,
               </h3>
-              <h3>technology can be an important lever of success.</h3>
-              <p style="font-family: 'Open Sans' ;">
-                Get ICT insights and solutions to help drive your business
-                forward faster...
-              </p>
+              <h3>
+                technology can be an important lever of success.
+              </h3>
+              <br />
+              <a href="#about" class="btn-get-started">Discover Greatness</a>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
           <div class="carousel-item">
             <div class="carousel-caption d-none d-md-block">
-              <h3>
-                Whatever your business goals,
-              </h3>
-              <h3>technology can be an important lever of success.</h3>
+              <h2>
+                Build your future with us
+              </h2>
+
               <p>
                 Get insights and resources to help drive your business forward
                 faster...
@@ -145,21 +159,29 @@
       <!-- Who we are Section -->
 
       <div class="row Us">
-        <div class="col-lg-5 mb-4">
-          <div class="image1">
-            <img src="img/laptop.jpg" alt="" />
-          </div>
+        <div class="col-lg-6 mb-4">
+          <div id="mosaic"></div>
         </div>
-        <div class="col-lg-7 mb-4">
-          <h3 style="font-family: 'Carter One' ;">Who we are & What we do</h3>
+        <div class="col-lg-6 mb-4">
+          <h3 style="font-family: 'Carter One' ;">Zanah Tech at a Glance!</h3>
 
           <p style="text-align: left; font-family: 'Merriweather'; top:30%;">
             Zanah Group Technologies is an IT company that aims to deliver the
             best feasible solutions according to the clients specifications in
             order to fulfill their objectives. We are well aware of the current
             market scenarios and understand the business requirements therefore
-            delivering budget-friendly solutions.
+            delivering budget-friendly solutions. We develop our products using
+            the latest and best technology there is out there such as:
           </p>
+          <ul id="technologies">
+            <li>Javascript & Its Frameworks</li>
+            <li>HTML5</li>
+            <li>React</li>
+            <li>PHP</li>
+            <li>Vue</li>
+            <li>Node Js</li>
+          </ul>
+          <a href="#about" class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>
@@ -258,13 +280,10 @@
           </div>
         </div>
       </div>
+      <a href="#about" class="btn btn-primary">See More Services</a>
     </div>
 
     <hr />
-
-    <!-- Call to Action Section -->
-
-    <!-- /.container -->
 
     <!-- Footer -->
     <div>

@@ -102,15 +102,21 @@ function shuffleArray(array) {
 /* Flip Cards  */
 document.querySelector(".card-flip").classList.toggle("flip");
 
-// Porfolio isotope and filter
-$(window).on("load", function() {
-  var portfolioIsotope = $(".portfolio-container").isotope({
-    itemSelector: ".portfolio-item"
-  });
-  $("#portfolio-flters li").on("click", function() {
-    $("#portfolio-flters li").removeClass("filter-active");
-    $(this).addClass("filter-active");
+(function($) {
+  "use strict";
+  // Porfolio isotope and filter
+  $(window).on("load", function() {
+    var portfolioIsotope = $(".portfolio-container").isotope({
+      itemSelector: ".portfolio-item"
+    });
+    $("#portfolio-flters li").on("click", function() {
+      $("#portfolio-flters li").removeClass("filter-active");
+      $(this).addClass("filter-active");
 
-    portfolioIsotope.isotope({ filter: $(this).data("filter") });
+      portfolioIsotope.isotope({ filter: $(this).data("filter") });
+    });
   });
-});
+
+  // Initiate the wowjs animation library
+  new WOW().init();
+})(jQuery);

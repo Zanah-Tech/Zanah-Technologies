@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   images = ["Laptop2.jpg", "Laptop.jpg"];
 
   speed = 100;
@@ -70,17 +70,17 @@ function toggleDisplay() {
 
   if (count === 0) {
     clearInterval(timer);
-    setTimeout(function() {
+    setTimeout(function () {
       timer = startInterval();
     }, delay);
     imageCount = (imageCount + 1) % images.length;
     if (opacity == 0) {
-      el.delay(speed).queue(function(next) {
+      el.delay(speed).queue(function (next) {
         $(this).css("background-image", "url(" + images[imageCount] + ")");
         next();
       });
     } else {
-      hoverEl.queue(function(next) {
+      hoverEl.queue(function (next) {
         $(this).css("background-image", "url(" + images[imageCount] + ")");
         next();
       });
@@ -102,14 +102,14 @@ function shuffleArray(array) {
 /* Flip Cards  */
 document.querySelector(".card-flip").classList.toggle("flip");
 
-(function($) {
+(function ($) {
   "use strict";
   // Porfolio isotope and filter
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     var portfolioIsotope = $(".portfolio-container").isotope({
       itemSelector: ".portfolio-item"
     });
-    $("#portfolio-flters li").on("click", function() {
+    $("#portfolio-flters li").on("click", function () {
       $("#portfolio-flters li").removeClass("filter-active");
       $(this).addClass("filter-active");
 
@@ -120,3 +120,6 @@ document.querySelector(".card-flip").classList.toggle("flip");
   // Initiate the wowjs animation library
   new WOW().init();
 })(jQuery);
+
+//PortFolio Section
+

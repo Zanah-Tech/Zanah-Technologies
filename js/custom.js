@@ -1,4 +1,13 @@
 $(document).ready(function () {
+ // Scroll effect on Nav
+  $(window).scroll(function () {
+    var window_top = $(window).scrollTop() + 1;
+    if (window_top > 50) {
+      $('.main-menu').addClass('menu_fixed animated fadeInDown');
+    } else {
+      $('.main-menu').removeClass('menu_fixed animated fadeInDown');
+    }
+  });
 
   // Porfolio isotope and filter
 

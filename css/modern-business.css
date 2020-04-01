@@ -25,12 +25,14 @@ body {
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
-  font-family: "Open Sans", sans-serif;
   color: #fff;
+  border-bottom: hidden #fff;
+  transition: border-bottom 1s all;
 }
-.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  background-color: #1707a7;
-  border-radius: 0.5em;
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover,
+.navbar .collapse .navbar-nav .nav-item .nav-link:active {
+  border-bottom: solid 0.8px;
 }
 
 .menu_fixed {
@@ -152,7 +154,7 @@ li {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  border: 0.5px solid #2b0b28;
+  border: 0.5px solid rgb(26, 12, 46);
   border-radius: 10%;
 }
 
@@ -160,8 +162,8 @@ li {
 .flip-card-front {
   background: linear-gradient(
     to right,
-    rgba(23, 2, 39, 1),
-    rgba(78, 32, 87, 1)
+    rgba(23, 2, 39, 0.7),
+    rgba(78, 32, 87, 0.7)
   );
   color: white;
 }
@@ -190,7 +192,7 @@ li {
 }
 
 #portfolio .wrap {
-  background-color: #18022a;
+  background-color: rgba(21, 11, 36, 0.7);
 }
 
 .center {
@@ -207,7 +209,8 @@ li {
   font-size: 12px;
   color: #fff;
   line-height: 20px;
-  background-color: #260342;
+  background-color: rgb(26, 12, 46);
+  border: solid 1px #0763c5;
   border-radius: 50px;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -225,7 +228,7 @@ li {
   position: relative;
   overflow: hidden;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #portfolio .box .portfolio-wrap {
@@ -271,6 +274,7 @@ li {
   text-align: center;
   opacity: 0;
   transition: 0.4s;
+  background-color: rgba(26, 12, 46, 0.6);
 }
 
 .box .portfolio-info h4 {
